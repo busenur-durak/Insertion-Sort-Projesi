@@ -1,0 +1,28 @@
+Merge Sort [16, 21, 11, 8, 12, 22]
+
+Aşamalar
+Bölme Aşaması:
+[16, 21, 11, 8, 12, 22] bölünür -> [16, 21, 11] ve [8, 12, 22]
+[16, 21, 11] bölünür -> [16] ve [21, 11]
+[21, 11] bölünür -> [21] ve [11]
+[8, 12, 22] bölünür -> [8] ve [12, 22]
+[12, 22] bölünür -> [12] ve [22]
+Sonuç olarak elde edilen tek elemanlı alt diziler: [16], [21], [11], [8], [12], [22]
+Birleştirme Aşaması:
+[16] ve [21] birleştirilir -> [16, 21] (sıralı)
+[21] ve [11] birleştirilir -> [11, 21] (sıralı)
+[16, 21] ve [11, 21] birleştirilir -> [11, 16, 21] (sıralı)
+[8] ve [12] birleştirilir -> [8, 12] (sıralı)
+[12] ve [22] birleştirilir -> [12, 22] (sıralı)
+[8, 12] ve [12, 22] birleştirilir -> [8, 12, 12, 22] (sıralı)
+[11, 16, 21] ve [8, 12, 12, 22] birleştirilir -> [8, 11, 12, 12, 16, 21, 22] (son sıralı dizi)
+Düzeltilmiş Birleştirme Aşaması (Adım Adım):
+[16] ve [21] -> [16, 21]
+[11] (tek başına)
+[16, 21] ve [11] -> [11, 16, 21]
+[8] (tek başına)
+[12] ve [22] -> [12, 22]
+[8] ve [12, 22] -> [8, 12, 22]
+[11, 16, 21] ve [8, 12, 22] -> [8, 11, 12, 16, 21, 22]
+
+Big-O Gösterimi:Merge Sort'un en iyi, ortalama ve en kötü durumdaki zaman karmaşıklığı O(n log n)'dir. Bölme işlemi logaritmik (log n) adımda tamamlanır ve her birleştirme adımı doğrusal (n) zaman alır.
