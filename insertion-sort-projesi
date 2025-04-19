@@ -1,0 +1,24 @@
+[22,27,16,2,18,6]
+Sort türüne göre aşamalar:
+[22], 27, 16, 2, 18, 6 (Sıralı bölüm: [22])
+[22, 27], 16, 2, 18, 6 (27, 22'den büyük olduğu için yerinde kalır)
+[16, 22, 27], 2, 18, 6 (16, 22'den ve 27'den küçüktür, doğru pozisyona yerleştirilir)
+[2, 16, 22, 27], 18, 6 (2, hepsinden küçüktür, en başa yerleştirilir)
+[2, 16, 18, 22, 27], 6 (18, 16'dan büyük, 22'den küçüktür, doğru pozisyona yerleştirilir)
+[2, 6, 16, 18, 22, 27] (6, 2'den büyük, 16'dan küçüktür, doğru pozisyona yerleştirilir)
+
+Big-O Gösterimi:
+Insertion Sort'un en kötü durumdaki (dizinin ters sıralı olması) ve ortalama durumdaki zaman karmaşıklığı O(n 2 )'dir. En iyi durumda (dizinin zaten sıralı olması) ise zaman karmaşıklığı O(n)'dir.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+Sıralanmış dizi: [2, 6, 16, 18, 22, 27]
+18 sayısı dizinin ortasına yakın bir konumdadır. Bu nedenle, 18 sayısını aramak Average case kapsamına girer.
+
+Selection Sort
+Verilen dizi: [7, 3, 5, 8, 2, 9, 4, 15, 6]
+Selection Sort algoritması, diziyi tarayarak her adımda en küçük elemanı bulur ve bu elemanı o anki sıranın başına yerleştirir.
+İlk 4 Adım:
+[2, 3, 5, 8, 7, 9, 4, 15, 6] (En küçük eleman 2, ilk sıraya taşındı)
+[2, 3, 5, 8, 7, 9, 4, 15, 6] (Kalan dizinin en küçük elemanı 3, ikinci sıraya taşındı)
+[2, 3, 4, 8, 7, 9, 5, 15, 6] (Kalan dizinin en küçük elemanı 4, üçüncü sıraya taşındı)
+[2, 3, 4, 5, 7, 9, 8, 15, 6] (Kalan dizinin en küçük elemanı 5, dördüncü sıraya taşındı)
