@@ -1,0 +1,65 @@
+Proje 3: Binary Search Tree Oluşturma  [7, 5, 1, 8, 3, 6, 0, 9, 4, 2]
+
+Aşamalar:
+7 (Kök): İlk eleman kök (root) olarak atanır.
+Kök: 7
+5: 5, kök (7)'den küçüktür, bu yüzden soluna eklenir.
+Kök: 7
+Sol: 5
+1: 1, kök (7)'den küçüktür, soluna gidilir (5). 1, 5'ten küçüktür, bu yüzden 5'in soluna eklenir.
+Kök: 7
+Sol: 5 (Sol: 1)
+8: 8, kök (7)'den büyüktür, bu yüzden sağına eklenir.
+Kök: 7
+Sol: 5 (Sol: 1)
+Sağ: 8
+3: 3, kök (7)'den küçüktür, soluna gidilir (5). 3, 5'ten küçüktür, soluna gidilir (1). 1'in solu boştur, bu yüzden 3, 1'in sağına eklenir (Çünkü 3 > 1).
+Kök: 7
+Sol: 5 (Sol: 1 (Sağ: 3))
+Sağ: 8
+6: 6, kök (7)'den küçüktür, soluna gidilir (5). 6, 5'ten büyüktür, bu yüzden 5'in sağına eklenir.
+Kök: 7
+Sol: 5 (Sol: 1 (Sağ: 3), Sağ: 6)
+Sağ: 8
+0: 0, kök (7)'den küçüktür, soluna gidilir (5). 0, 5'ten küçüktür, soluna gidilir (1). 0, 1'den küçüktür, bu yüzden 1'in soluna eklenir.
+Kök: 7
+Sol: 5 (Sol: 1 (Sol: 0, Sağ: 3), Sağ: 6)
+Sağ: 8
+9: 9, kök (7)'den büyüktür, sağına gidilir (8). 9, 8'den büyüktür, bu yüzden 8'in sağına eklenir.
+Kök: 7
+Sol: 5 (Sol: 1 (Sol: 0, Sağ: 3), Sağ: 6)
+Sağ: 8 (Sağ: 9)
+4: 4, kök (7)'den küçüktür, soluna gidilir (5). 4, 5'ten küçüktür, soluna gidilir (1). 4, 1'den büyüktür, sağına gidilir (3). 4, 3'ten büyüktür, bu yüzden 3'ün sağına eklenir.
+Kök: 7
+Sol: 5 (Sol: 1 (Sol: 0, Sağ: 3 (Sağ: 4)), Sağ: 6)
+Sağ: 8 (Sağ: 9)
+2: 2, kök (7)'den küçüktür, soluna gidilir (5). 2, 5'ten küçüktür, soluna gidilir (1). 2, 1'den büyüktür, sağına gidilir (3). 2, 3'ten küçüktür, bu yüzden 3'ün soluna eklenir.
+Kök: 7
+Sol: 5 (Sol: 1 (Sol: 0, Sağ: 3 (Sol: 2, Sağ: 4)), Sağ: 6)
+Sağ: 8 (Sağ: 9)
+Sonuç Binary Search Tree Yapısı:
+
+        7
+       / \
+      5   8
+     / \   \
+    1   6   9
+   / \
+  0   3
+     / \
+    2   4
+Açıklama Tarzında:
+
+Kök (root) 7'dir.
+Kökün solunda 5 bulunur.
+5'in solunda 1 bulunur.
+1'in solunda 0 bulunur.
+1'in sağında 3 bulunur.
+3'ün solunda 2 bulunur.
+3'ün sağında 4 bulunur.
+5'in sağında 6 bulunur.
+Kökün sağında 8 bulunur.
+8'in sağında 9 bulunur.
+
+
+
